@@ -1,12 +1,11 @@
 RewriteEngine On
 RewriteCond %{HTTPS} !off
-DirectoryIndex home.htm
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
-RewriteRule ^([^\.]+)$ $1.htm [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 <ifModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
@@ -32,8 +31,8 @@ RewriteEngine On
 RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
 RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
 RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
-RewriteRule ^(.*)$ index.htm [F,L]
-ErrorDocument 401 /index.htm
-ErrorDocument 403 /index.htm
-ErrorDocument 404 /index.htm
-ErrorDocument 500 /index.htm
+RewriteRule ^(.*)$ index.html [F,L]
+ErrorDocument 401 /index.html
+ErrorDocument 403 /index.html
+ErrorDocument 404 /index.html
+ErrorDocument 500 /index.html
