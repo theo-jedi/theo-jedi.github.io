@@ -1,0 +1,113 @@
+@import url("fonts.css");
+
+body {
+	padding: 0 25vw 10vh 25vw;
+}
+
+wrapper {
+	color: #222;
+	letter-spacing: 0.1px;
+	font-family: serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	font-size: 2em;
+    line-height: 1.1em;
+    color: #000;
+}
+
+h3 {
+	margin-top: 1em;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #959be3;
+}
+
+p {
+	margin: 1.2em 0;
+	font-size: 17.5px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+ul {
+	font-size: 16px;
+    padding-left: 0;
+    margin-left: 20px;
+    color: #333;
+}
+
+ul li {
+	line-height: 1.5;
+	font-size: 17.5px;
+    margin-bottom: .5em;
+    text-align: justify;
+}
+
+#title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    margin-top: 4vh;
+    padding-bottom: 3vh;
+    border-bottom: 3px solid #eaeaea;
+}
+
+#title > a {
+	font-family: "Gilroy", sans-serif;
+	padding: 10px 20px 10px 20px;
+    border: 2px solid #bec1ee;
+    border-radius: 10px;
+    text-align: center;
+	moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#title > a:hover {
+	color: #fafafa;
+	background: #bec1ee;
+	moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#title-logo {
+	width: 30%;
+}
+
+#title-logo > img {
+	display: block;
+	width: 100%;
+    bottom: 0;
+}
+
+#content {
+	width: 98%;
+}
+
+@media (max-width: 1080px) {
+	body {
+		padding-left: 4vw;
+		padding-right: 4vw;
+	}
+
+	#title {
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+		margin-bottom: 2vh;
+	}
+
+	#title-logo {
+		width: 40%;
+	}
+
+}

@@ -1,0 +1,432 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background: #fafafa;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Light";
+  src: url(fonts/Roboto-Light.ttf) format("truetype");
+}
+
+a {
+	color: #fafafa;
+	font-family: sans-serif;
+}
+
+wrapper {
+	display: flex;
+	flex-direction: row;
+	font-family: sans-serif;
+}
+
+#background-image {
+	position: absolute;
+	height: 100vh;
+	width: 60vw;
+	top: 0;
+	left: 0;
+	background: url(images/background.jpg);
+	background-position-x: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#title-section {
+	position: relative;
+	width: 60vw;
+	height: 100vh;
+	color: #fafafa;
+	background: #100919bf;
+}
+
+#content-section {
+	position: relative;
+	width: 34vw;
+	height: 90vh;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	color: #3a3a3a;
+	background: #fafafa;
+	overflow-y: auto;
+}
+
+#content-section > * {
+	box-sizing: content-box;
+}
+
+#title-block {
+	height: 100%;
+	padding: 20%;
+	padding-top: 0;
+	padding-bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#title-logo {
+	width: 100%;
+}
+
+#title-logo > img {
+	width: 96%;
+}
+
+#title-social {
+	display: flex;
+	margin-top: 4vh;
+}
+
+#title-social > a {
+	height: 38px;
+	width: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid;
+	border-radius: 35px;
+	margin-right: 2vh;
+}
+
+#title-social > a:last-child {
+	margin-right: 0;
+}
+
+#title-social > a:hover {
+	color: #000000;
+	border-color: #fafafa;
+}
+
+#title-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2vh;
+	font-size: .8em;
+}
+
+#title-buttons > a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+}
+
+#title-social > a, #title-buttons > a, #title-buttons > #googleplay-button > div {
+	background-size: 300% 100%;
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+#title-social > a, #title-buttons > a:hover, #title-buttons > #googleplay-button:hover > div {
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+#title-social > a, #title-buttons > #googleplay-button {
+	border: 2px solid;
+	background: rgba(255, 255, 255, 0.07);
+}
+
+#title-buttons > #googleplay-button {
+	height: 42px;
+	width: 26%;
+	margin-right: 2vh;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+#title-social > a:hover, #title-buttons > #googleplay-button:hover {
+	background: #fafafa;
+}
+
+#title-buttons > #googleplay-button > div {
+	background-image: linear-gradient(to right, #fafafa, #fafafa, #4568dc, #b06ab3);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#title-buttons > #googleplay-button, #title-buttons > #support-button {
+	-webkit-font-smoothing: antialiased;
+}
+
+#title-buttons > #support-button:hover, #title-buttons > #googleplay-button:hover > div {
+	background-position: 100% 0;
+}
+
+#title-buttons > #support-button {
+	height: 46px;
+	width: 74%;
+	background-image: linear-gradient(to right, #4568dc, #b06ab3, #b06ab3, #d43b66);
+	box-shadow: 0 4px 15px 0 rgba(130, 116, 211, 0.8);
+}
+
+#title-buttons > #support-button:hover {
+	box-shadow: 0 4px 15px 0 rgba(199, 78, 133, 0.8);
+}
+
+#copyrights {
+	position: absolute;
+	font-size: .7em;
+	text-align: center;
+	bottom: 22px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#copyrights > div {
+	display: inline-block;
+	user-select: none;
+	opacity: .2;
+}
+
+#copyrights > span:hover {
+	cursor: default;
+}
+
+#copyrights > span, #copyrights > a {
+	opacity: .2;
+	moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#copyrights > span:hover, #copyrights > a:hover {
+	opacity: .8;
+	moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#content-title {
+	font-family: sans-serif;
+	font-size: 2.5em;
+	padding-bottom: 2.5vh;
+	user-select: none;
+}
+
+#content-section > #about-block > #about-text {
+	padding-bottom: 5vh;
+	font-family: "Roboto Regular", sans-serif;
+	line-height: 28px;
+	padding-left: 15px;
+	color: #adadad;
+	-webkit-font-smoothing: antialiased;
+}
+
+#content-apps {
+	padding: 20px;
+	border-radius: 15px;
+	background: #3a3a3a;
+}
+
+#content-apps {
+	height: 80px;
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+#content-apps:hover {
+	moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+
+#content-apps > #apps-list {
+	display: flex;
+}
+
+#content-apps > #app-title, #content-apps > #app-description {
+	opacity: 0;
+	width: 75%;
+	visibility: hidden;
+	margin-left: 18px;
+	font-family: sans-serif;
+	line-height: 20px;
+	moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#content-apps > #app-title {
+	margin-top: 24px;
+	font-family: "Roboto Regular", sans-serif;
+	font-size: 1.3em;
+	color: #eaeaea;
+}
+
+#content-apps > #app-description {
+	font-family: "Roboto Regular", sans-serif;
+	margin-top: 6px;
+	color: #b5b5b5;
+	-webkit-font-smoothing: antialiased;
+}
+
+#content-apps > #app-link {
+	visibility: hidden;
+	opacity: 0;
+}
+
+#content-apps > #app-link > #app-link-text {
+	font-family: "Roboto Light", sans-serif;
+	width: 35%;
+	font-size: .9em;
+	color: #b5b5b5;
+	border: 1px solid;
+	border-radius: 100vw;
+	text-align: center;
+	margin-left: 18px;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+#content-apps > #app-link > #app-link-text:hover {
+	background: #b5b5b5;
+	border-color: #b5b5b5;
+	color: #3a3a3a;
+}
+
+#content-apps > #apps-list > #app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 1.5vw;
+}
+
+#content-apps > #apps-list > #app img {
+	width: 80px;
+	border-radius: 150px;
+}
+
+@media (max-width: 961px) {
+	wrapper {
+		flex-direction: column;
+	}
+
+	#background-image {
+		height: 100vh;
+		width: 100%;
+	}
+
+	#title-section, #content-section {
+		width: 100%;
+		height: 100vh;
+		padding: 0;
+		overflow-y: visible;
+	}
+
+	#content-title {
+		padding-top: 2vh;
+		font-size: 1.8em;
+	}
+
+	#about-block {
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-top: 6vh;
+		padding-bottom: 0;
+	}
+
+	#apps-block {
+		padding: 5vw;
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 641px) {
+	wrapper {
+		height: 100%;
+	}
+
+	#title-block {
+		padding-top: 0;
+		padding-bottom: : 0;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+
+	#title-buttons {
+		font-size: .75em;
+	}
+
+	#content-apps > #apps-list > #app {
+		margin-right: 5vw;
+	}
+
+	#title-section {
+		height: 100vh;
+	}
+}
+
+@media (max-width: 320px) {
+	#title-buttons {
+		font-size: .6em;
+	}
+}
