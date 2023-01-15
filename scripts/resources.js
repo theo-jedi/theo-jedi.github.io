@@ -31,7 +31,7 @@ export const text_footer_divider = "\u00A0/\u00A0"
 export const text_footer_copyrights = "© TheoSt. "
 export const text_footer_tagline = "bring ideas to live better"
 export const text_footer_privacy_policy = "privacy policy"
-export const text_footer_privacy_link = "../pages/privacy.html"
+export const text_footer_privacy_link = "../privacy.html"
 
 /** About **/
 export const text_about_title = "About us"
