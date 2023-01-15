@@ -17,7 +17,6 @@ function init() {
 }
 
 function initImages() {
-    console.log(config.image.background);
     ui_main_section.style.backgroundImage = config.image.background;
     if (config.image.logo !== undefined) {
         const ui_image = document.createElement("img");
