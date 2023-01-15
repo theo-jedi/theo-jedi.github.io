@@ -383,6 +383,13 @@ wrapper {
 		padding: 5vw;
 		padding-top: 0;
 	}
+
+	#main-section {
+		height: 100vh;
+		padding-left: 6vw;
+		padding-right: 6vw;
+		width: 88vw;
+	}
 }
 
 @media (max-width: 641px) {
@@ -396,13 +403,6 @@ wrapper {
 
 	#content-apps > #apps-list > div {
 		margin-right: 5vw;
-	}
-
-	#main-section {
-		height: 100vh;
-		padding-left: 6vw;
-		padding-right: 6vw;
-		width: 88vw;
 	}
 }
 
