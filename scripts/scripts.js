@@ -1,0 +1,5 @@
+import * as main from "./main.js"
+import * as footer from "./footer.js"
+import * as about from "./about.js"
+import * as apps from "./apps.js"
+import * as content from "./content.js"

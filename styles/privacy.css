@@ -1,4 +1,7 @@
-@import url("fonts.css");
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/roboto_regular.ttf) format("truetype");
+}
 
 body {
 	padding: 0 25vw 10vh 25vw;
@@ -60,7 +63,7 @@ ul li {
 }
 
 #title > a {
-	font-family: "Gilroy", sans-serif;
+	font-family: sans-serif;
 	padding: 10px 20px 10px 20px;
     border: 2px solid #bec1ee;
     border-radius: 10px;
