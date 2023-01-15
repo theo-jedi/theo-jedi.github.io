@@ -80,7 +80,8 @@ function iconButton(button, view) {
         const ui_button = view !== undefined ? view : document.createElement("a");
         if (button.icon !== undefined) {
             const ui_icon = document.createElement("i");
-            if (button.size !== undefined) ui_icon.style.fontSize = button.size;
+
+            if (button.size !== undefined) ui_icon.style.fontSize = button.size + "px";
             ui_icon.className = button.icon;
             ui_button.appendChild(ui_icon);
         }
