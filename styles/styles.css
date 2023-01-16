@@ -263,7 +263,7 @@ wrapper {
     padding-bottom: 5vh;
     font-family: "Roboto Regular", sans-serif;
     line-height: 28px;
-    color: #a0a0a0;
+    color: #868686;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -390,9 +390,9 @@ wrapper {
 
     #main-section {
         height: 100vh;
-        padding-left: 6vw;
-        padding-right: 6vw;
-        width: 88vw;
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 88%;
     }
 }
 
@@ -411,9 +411,9 @@ wrapper {
 
     #main-section {
         height: 100vh;
-        padding-left: 6vw;
-        padding-right: 6vw;
-        width: 88vw;
+        padding-left: 6%;
+        padding-right: 6%;
+        width: 88%;
     }
 }
 
